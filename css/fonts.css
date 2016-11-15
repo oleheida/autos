@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "RopaSans-Regular";
+	src: url('../fonts/RopaSansPro-Regular.eot');
+	src: url('../fonts/RopaSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RopaSansPro-Regular.woff2') format('woff2'),
+		url('../fonts/RopaSansPro-Regular.woff') format('woff'),
+		url('../fonts/RopaSansPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

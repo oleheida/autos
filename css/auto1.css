@@ -1,0 +1,242 @@
+body {
+    display: none;
+    font-family: 'RopaSans-Regular';
+    background-color: #000;
+    color: #fff;
+}
+
+.video-container {
+    height: 100vh;
+}
+
+
+.clearPadding {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding:0px;
+}
+
+.navigation {
+    background-color: #000;
+}
+
+.navbar-inverse {
+    padding: 0 10px 0 10px;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    border: none;
+    border-radius:0px;
+    font-size: 1.6rem;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    border: none;
+    background-color: #444;
+    transition: 0.7s all linear;
+    height: 100%;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar.affix {
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(34,34,34,0.2);
+}
+
+.preview img{
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 1;
+}
+
+.overlay:hover:after {
+    opacity: 1;
+}
+    
+@media (min-width: 768px) {
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+#video_bg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.variants {
+    padding-bottom: 20px;
+}
+
+.tab {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.var-block {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.tab2{
+    font-size:4rem;
+}
+
+.var-block-text {
+    font-size: 0.8rem;
+}
+
+.tab-content{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.text {
+    text-align: justify;  
+}
+
+.nav-tabs{
+    border:none;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+.nav li a:focus, .nav li a:hover {
+    border-bottom: 2px solid #fff;
+    background-color:inherit;
+
+}
+
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #000;
+}
+
+.text-header {
+    display: none;
+    font-size: 3.5rem;
+    justify-content: center;
+    color: #fff;
+}
+.user{
+    float: left;
+    cursor: pointer;
+}
+
+div.wrap{
+    float: right;
+}
+
+h3{
+    float: left;
+}
+
+.commentary{
+    text-align: center;
+    font-size: 2em;
+}
+
+.user{
+    font-size: 2em;
+    text-align: justify;
+}
+
+.outside a{
+    font-weight: bold;
+    color: #fff;
+}
+
+.bx-controls {
+    display: none;
+}
+
+.CoMment{
+    font-size: 1em;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.bx-controls {
+    display: none;
+}
+
+.outside a:hover, a:focus{
+    text-decoration: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #video_bg {
+        height: 300%;
+        top: -100%;
+    }
+}
+ 
+@media (max-aspect-ratio: 16/9) {
+    #video_bg {
+        width: 300%;
+        left: -100%;
+    }
+}
+ 
+@supports (object-fit: cover) {
+    #video_bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) and (orientation:landscape) {
+    .landscape {
+        width: 50%;
+    }
+}
